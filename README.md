@@ -1,23 +1,19 @@
 # Miami-gentrification-forecast
 
-This project aims to build a **machine learning model** that predicts which Miami-Dade neighborhoods are currently experiencing, or are at risk of experiencing, **gentrification**. Our approach leverages prior research on urban change and predictive modeling.
+This project focuses on predicting housing prices in Miami-Dade County over the next five years, specifically by housing size and type. We initially planned to predict gentrification risk at the neighborhood level, but due to the lack of consistent neighborhood-level data for Miami-Dade and time constraints, we shifted focus to county-level housing price forecasting.
 
-We will build a **Random Forest classification model**, chosen because prior research (Yoo, 2023) shows that Random Forests perform especially well in gentrification prediction tasks. This model works effectively with large datasets, handles nonlinear patterns, and can capture the complex interactions found in neighborhood-level socioeconomic data.
+## Approach 
+We will build a **Random Forest regression model**, chosen because prior research (Yoo, 2023) shows that Random Forests perform especially well in gentrification prediction tasks, which was our previous idea, but we expect it to perform just as well for this model. This model will make use of RF in order to find **nonlinear relationships** between **housing prices and factors like income, rent, vacancy rates, and education levels**.
 
 ## Dataset
 
-The dataset is created by combining multiple public sources:
-
-- **Primary data:** Miami-Dade County ACS datasets from 2019 and 2024
-- **Information included:** Household characteristics, education levels, housing conditions, income distributions
-- **Processing:** After preprocessing and cleaning, the dataset includes:
-  - Predictive variables (features)
-  - Target label indicating whether a neighborhood is gentrified or at risk
+**-** The dataset is created by combining multiple public sources from the **American Community Survey (ACS)** for Miami-Dade County from **2019** and **2024**.
+**- This data includes:** Median rents, home values, income levels, vacancy rates, poverty rates, and education attainment all at the county level
+**-** After preprocessing and cleaning, the dataset includes:
+  **-** Predictive variables (features)
 
 ## Features
-
-Each neighborhood is represented by multiple input features, such as:
-
+The key features used to predict housing prices include:
 - Median rent  
 - Median household income  
 - Home values  
@@ -25,9 +21,11 @@ Each neighborhood is represented by multiple input features, such as:
 - Poverty rate  
 - Levels of educational attainment  
 
-These features are used to predict a **single gentrification label**, making this a **many-to-one classification problem**.
-
 ## Model Evaluation
+We will evaluate model performance primarily using regression metrics such as:
+- Mean Squared Error **(MSE)**
+- Mean Absolute Error **(MAE)**
 
-To measure performance, we will evaluate the model using **accuracy, precision, recall, and F1-score**. These metrics will help us understand how reliably the model identifies neighborhoods experiencing or likely to experience gentrification, while also addressing potential class imbalances in the data.
+
+
 
