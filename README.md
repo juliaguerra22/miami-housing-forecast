@@ -1,1 +1,8 @@
-# miami-gentrification-forecast
+# Miami-gentrification-forecast
+
+# For this project, we aim to build a machine learning model that predicts which Miami-Dade neighborhoods are currently experiencing, or are at risk of experiencing, gentrification. Our approach is grounded in prior research on urban change and predictive modeling. We will build a Random Forest classification model, chosen because prior research (Yoo, 2023) shows that Random Forests perform especially well in gentrification prediction tasks. This model works effectively with large datasets, handles nonlinear patterns, and can capture the complex interactions found in neighborhood-level socioeconomic data.
+
+# The dataset for this project is being created by combining multiple public sources. Our primary data comes from the Miami-Dade County ACS datasets from 2019 and 2024, which provide comprehensive information on household characteristics, education levels, housing conditions, and income distributions. After preprocessing and cleaning, the final dataset will include both the predictive variables and a target label indicating whether the neighborhood is gentrified or at risk.
+
+# This project is designed as a supervised learning problem. Each neighborhood is represented by multiple input features—such as median rent, median household income, home values, vacancy rates, poverty rate, and levels of educational attainment. These features are used to predict a single label that represents the neighborhood’s gentrification status. Because we use many features to predict one outcome, this becomes a many-to-one classification task. To measure performance, we will evaluate the model using accuracy, precision, recall, and F1-score. These metrics will help us understand how reliably the model identifies neighborhoods experiencing or likely to experience gentrification, while also addressing potential class imbalances in the data.
+
