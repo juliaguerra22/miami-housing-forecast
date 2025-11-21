@@ -1,4 +1,4 @@
-# Miami-gentrification-forecast
+# Miami-housing-forecast
 
 This project focuses on predicting housing prices in Miami-Dade County over the next five years, specifically by housing size and type. We initially planned to predict gentrification risk at the neighborhood level, but due to the lack of consistent neighborhood-level data for Miami-Dade and time constraints, we shifted focus to county-level housing price forecasting.
 
