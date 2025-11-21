@@ -7,10 +7,10 @@ We will build a **Random Forest regression model**, chosen because prior researc
 
 ## Dataset
 
-**-** The dataset is created by combining multiple public sources from the **American Community Survey (ACS)** for Miami-Dade County from **2019** and **2024**.
-**- This data includes:** Median rents, home values, income levels, vacancy rates, poverty rates, and education attainment all at the county level
-**-** After preprocessing and cleaning, the dataset includes:
-  **-** Predictive variables (features)
+- The dataset is created by combining multiple public sources from the **American Community Survey (ACS)** for Miami-Dade County from **2019** and **2024**.
+- This data includes:** Median rents, home values, income levels, vacancy rates, poverty rates, and education attainment all at the county level
+- After preprocessing and cleaning, the dataset includes:
+ - Predictive variables (features)
 
 ## Features
 The key features used to predict housing prices include:
